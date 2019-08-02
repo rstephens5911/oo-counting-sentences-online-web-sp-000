@@ -21,8 +21,7 @@ class String
     else
       array = self.split(/[.!?] /)
     end
-
     array.count
   end
-
+  
 end
