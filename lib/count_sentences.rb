@@ -22,6 +22,7 @@ class String
     else
       array << sentence.split(/[.!?] /)
     end
+  end
 
     array.count
   end
