@@ -15,8 +15,9 @@ class String
   end
 
   def count_sentences
-
-    self.split('.', '!', '?').length
+    array = []
+    array << self.split('.', '!', '?')
+    array.size
 
   end
 end
