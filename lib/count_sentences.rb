@@ -16,12 +16,13 @@ class String
 
   def count_sentences
     array = []
-    if self.end_with?(".")
-      array << self
-    elsif self.end_with?("?")
-      array << self
-    elsif self.end_with?("!")
-      array << self
+    self.each do |sentence|
+    if sentence.end_with?(".")
+      array << sentence
+    elsif sentence.end_with?("?")
+      array << sentence
+    elsif sentence.end_with?("!")
+      array << sentence
     end
     array.count
   end
