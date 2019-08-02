@@ -19,7 +19,7 @@ class String
     if self == ""
       0
     else
-      array << self.split(/[.!?] /)
+      array = self.split(/[.!?] /)
     end
 
     array.count
