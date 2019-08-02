@@ -14,9 +14,16 @@ class String
     self.end_with?("!")? true : false
   end
 
-  def count_sentences(sentences)
-    words_array = sentences.split('.', '!', '?')
-    words_array.count
+  def count_sentences
+    array = []
+    if self.end_with?(".")
+      array << self
+    elsif self.end_with?("?")
+      array << self
+    elsif self.end_with?("!")
+      array << self
+    end
+    array.count
   end
 
 end
