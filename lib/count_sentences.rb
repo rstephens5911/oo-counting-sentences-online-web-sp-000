@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     words_array = self.split('.', '!', '?')
-    words_array
+    words_array.count
   end
 
 end
