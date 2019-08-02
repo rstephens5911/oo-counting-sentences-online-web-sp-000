@@ -15,17 +15,8 @@ class String
   end
 
   def count_sentences
-    array = []
-    self.each do |sentence|
-    if sentence.end_with?(".")
-      array << sentence
-    elsif sentence.end_with?("?")
-      array << sentence
-    elsif sentence.end_with?("!")
-      array << sentence
-    end
-  end
-    array.count
+    self.split(/[.!?] /)
+    self.count
   end
 
 end
