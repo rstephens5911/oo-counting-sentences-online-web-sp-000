@@ -23,5 +23,5 @@ class String
     end
     array.count
   end
-  
+
 end
