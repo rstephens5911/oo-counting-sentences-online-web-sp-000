@@ -16,15 +16,14 @@ class String
 
   def count_sentences
     array = []
-    self.each do |sentence|
     if self == ""
       0
     else
-      array << sentence.split(/[.!?] /)
+      self.split(/[.!?] /)
     end
   end
 
-    array.count
+    self.count
   end
 
 end
