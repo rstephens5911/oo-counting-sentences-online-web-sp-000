@@ -18,6 +18,7 @@ class String
     array = []
     self.each do |string|
     array << string.split(".")
+  end
     array.count
 
   end
