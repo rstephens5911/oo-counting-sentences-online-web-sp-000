@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     array = []
+    self.each do |self|
     array << self.split(".")
     array.count
 
