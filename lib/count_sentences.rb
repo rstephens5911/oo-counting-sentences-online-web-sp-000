@@ -15,14 +15,14 @@ class String
   end
 
   def count_sentences
-    counter =0
+    array = []
     if self == ""
       0
     else
-      counter = self.split(/[.!?] /)
+      array << self.split(/[.!?] /)
     end
 
-    counter
+    array.count
   end
 
 end
