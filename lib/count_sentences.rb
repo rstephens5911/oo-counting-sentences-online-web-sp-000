@@ -19,10 +19,10 @@ class String
     if self == ""
       0
     else
-      self.split(/[.!?] /)
+      self.split(/[.!?] /).count
     end
 
-    self.count
+    self
   end
 
 end
