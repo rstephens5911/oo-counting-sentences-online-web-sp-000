@@ -24,6 +24,7 @@ class String
     elsif sentence.end_with?("!")
       array << sentence
     end
+  end
     array.count
   end
 
