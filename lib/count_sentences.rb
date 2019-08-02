@@ -16,10 +16,11 @@ class String
 
   def count_sentences
     array = []
+    self.each do |sentence|
     if self == ""
       0
     else
-      array << self.split(/[.!?] /)
+      array << sentence.split(/[.!?] /)
     end
 
     array.count
